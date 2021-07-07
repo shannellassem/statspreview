@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/*backgrounds*/
+/*text colors*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #090b1a;
+  font-family: Lexend Deca;
+}
+
+section {
+  background-color: #1b1938;
+  margin: 3em 2em;
+  padding-bottom: 2em;
+  border-radius: .5em;
+  text-align: center;
+}
+
+.header-image {
+  position: relative;
+}
+
+.header-image #overlay {
+  background: #aa5cdb;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+
+.header-image img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+  border-radius: 10px 10px 0 0;
+}
+
+h1 {
+  color: white;
+  font-family: Inter, sans-serif;
+  margin-top: 1em;
+}
+
+h1 span {
+  color: #aa5cdb;
+}
+
+.intro {
+  margin: 1.5em 4em;
+}
+
+.intro p {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: .8rem;
+  line-height: 1.5em;
+}
+
+.stats {
+  list-style: none;
+  color: white;
+  margin-top: 1.5em;
+  font-size: 1.3rem;
+  font-family: Inter;
+  font-weight: bold;
+}
+
+.stats span {
+  color: rgba(255, 255, 255, 0.6);
+  display: block;
+  text-transform: uppercase;
+  font-family: Inter;
+  font-size: .5rem;
+  letter-spacing: .3em;
+  margin-top: .4em;
+}
+
+.stats li {
+  margin-top: .6em;
+}
+
+@media (min-width: 700px) {
+  section {
+    position: absolute;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "content women";
+    margin: 7em 4em;
+    padding-bottom: 0;
+    width: 90%;
+  }
+  .header-image {
+    position: relative;
+    border-radius: 0 10px 10px 0;
+  }
+  img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: women;
+    min-width: 500px;
+    min-height: 367px;
+    border-radius: 0 10px 10px 0;
+  }
+  #left-col {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: content;
+    text-align: left;
+    padding: 10% 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  h1 {
+    margin: -3em 1.2em 0;
+    font-size: 2rem;
+  }
+  .intro {
+    position: relative;
+    word-wrap: break-word;
+    margin: 1em 2em 0;
+    top: 1em;
+  }
+  .stats {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 1.5em;
+    top: 4em;
+  }
+  .stats span {
+    font-size: .6rem;
+  }
+  .stats li {
+    padding-right: 2.5em;
+  }
+}
+/*# sourceMappingURL=main.css.map */
