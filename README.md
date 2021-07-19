@@ -53,7 +53,7 @@ Users should be able to:
 
 ### What I learned
 
-I've learned the iportance of consice language. This was one of the most simple projects I have worked on. Instead of overcoplicating it, I should have also used simple words. I didn't need as many div classes as I thought. When it comes to the stats list, I could have used strong. A
+I've learned the importance of consice language. This was one of the most simple projects I have worked on. Instead of overcoplicating it, I should have also used simple words. I didn't need as many div classes as I thought. When it comes to the stats list, I could have used strong. 
 
 Using css grid would have made things easier by keeping it organized. I need to get better at using grid and flexbox properly.
 
